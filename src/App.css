@@ -1,0 +1,279 @@
+
+/* ==========================================
+   OMNIPLAY — MARKDOWN & CODE DISPLAY
+   Keep the main workspace styling in index.css.
+========================================== */
+
+.message-body {
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  color: #dce2eb;
+}
+
+.message-body > :first-child {
+  margin-top: 0;
+}
+
+.message-body > :last-child {
+  margin-bottom: 0;
+}
+
+.message-body p {
+  margin: 0 0 14px;
+}
+
+.message-body h1,
+.message-body h2,
+.message-body h3,
+.message-body h4 {
+  color: #eceef2;
+  line-height: 1.35;
+  font-weight: 650;
+  margin: 22px 0 12px;
+}
+
+.message-body h1 { font-size: 1.6rem; }
+.message-body h2 { font-size: 1.35rem; }
+.message-body h3 { font-size: 1.15rem; }
+.message-body h4 { font-size: 1rem; }
+
+.message-body ul,
+.message-body ol {
+  padding-left: 24px;
+  margin: 12px 0 16px;
+}
+
+.message-body li {
+  margin: 6px 0;
+}
+
+.message-body li::marker {
+  color: #8ab4f8;
+}
+
+.message-body blockquote {
+  margin: 16px 0;
+  padding: 4px 16px;
+  border-left: 3px solid #a8c7fa;
+  color: #aeb5c2;
+  background: rgba(168, 199, 250, 0.045);
+}
+
+.message-body a {
+  color: #a8c7fa;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.message-body a:hover {
+  color: #d4e3ff;
+}
+
+.message-body hr {
+  border: 0;
+  border-top: 1px solid #303540;
+  margin: 22px 0;
+}
+
+.message-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  display: block;
+  overflow-x: auto;
+}
+
+.message-body th,
+.message-body td {
+  padding: 10px 12px;
+  border: 1px solid #303540;
+  text-align: left;
+}
+
+.message-body th {
+  background: #252933;
+  color: #eceef2;
+  font-weight: 600;
+}
+
+.message-body tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Inline code */
+.message-body :not(pre) > code {
+  background: #292f3b;
+  color: #c4d7ff;
+  padding: 3px 6px;
+  border: 1px solid #394354;
+  border-radius: 5px;
+  font-family: "DM Mono", monospace;
+  font-size: 0.9em;
+}
+
+/* Code block container */
+.code-block-wrapper {
+  margin: 18px 0;
+  border: 1px solid #303540;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #151820;
+  max-width: 100%;
+}
+
+.code-block-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 13px;
+  background: #20242d;
+  border-bottom: 1px solid #303540;
+  color: #9299a6;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.code-block-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 0;
+  color: #a8c7fa;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+}
+
+.code-block-toolbar button:hover {
+  color: #ffffff;
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  background: #151820;
+  color: #dce2eb;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  line-height: 1.75;
+  tab-size: 2;
+}
+
+.code-block-wrapper pre code {
+  font-family: inherit;
+  white-space: pre;
+}
+
+/* Syntax highlighting */
+.code-block-wrapper .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  background: transparent;
+  color: #dce2eb;
+}
+
+.code-block-wrapper .hljs-comment,
+.code-block-wrapper .hljs-quote {
+  color: #7f8997;
+  font-style: italic;
+}
+
+.code-block-wrapper .hljs-keyword,
+.code-block-wrapper .hljs-selector-tag,
+.code-block-wrapper .hljs-literal {
+  color: #c792ea;
+}
+
+.code-block-wrapper .hljs-string,
+.code-block-wrapper .hljs-attr,
+.code-block-wrapper .hljs-template-tag {
+  color: #c3e88d;
+}
+
+.code-block-wrapper .hljs-number,
+.code-block-wrapper .hljs-symbol,
+.code-block-wrapper .hljs-bullet {
+  color: #f78c6c;
+}
+
+.code-block-wrapper .hljs-title,
+.code-block-wrapper .hljs-function,
+.code-block-wrapper .hljs-section {
+  color: #82aaff;
+}
+
+.code-block-wrapper .hljs-built_in,
+.code-block-wrapper .hljs-type {
+  color: #ffcb6b;
+}
+
+.code-block-wrapper .hljs-variable,
+.code-block-wrapper .hljs-params {
+  color: #f07178;
+}
+
+.code-block-wrapper .hljs-meta,
+.code-block-wrapper .hljs-doctag {
+  color: #89ddff;
+}
+
+.code-block-wrapper .hljs-operator,
+.code-block-wrapper .hljs-punctuation {
+  color: #89ddff;
+}
+
+.code-block-wrapper .hljs-property {
+  color: #f07178;
+}
+
+.code-block-wrapper .hljs-tag {
+  color: #f07178;
+}
+
+.code-block-wrapper .hljs-name {
+  color: #f07178;
+}
+
+.code-block-wrapper .hljs-attribute {
+  color: #c792ea;
+}
+
+.code-block-wrapper .hljs-selector-class,
+.code-block-wrapper .hljs-selector-id {
+  color: #ffcb6b;
+}
+
+/* Message copy button */
+.message-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #91a0b2;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.message-copy:hover {
+  color: #dce8fa;
+}
+
+/* Keep code blocks usable on smaller screens */
+@media (max-width: 700px) {
+  .code-block-wrapper pre {
+    font-size: 11px;
+    padding: 12px;
+  }
+
+  .message-body table {
+    font-size: 11px;
+  }
+}
