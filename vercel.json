@@ -1,0 +1,9 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://omniplay-backend.onrender.com/api/$1"
+    }
+  ]
+}
